@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#734d75"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Introduceti durata intrebarii:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textSize="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView1"
+        android:id="@+id/relativeLayout1">
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPicker1"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="111.5dp" />
+        <TextView
+            android:text="(minute)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/numberPicker1"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp" />
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="244.5dp"
+            android:layout_height="46.5dp"
+            android:id="@+id/relativeLayout2"
+            android:background="@drawable/background_marginiovalenegru2">
+            <ImageView
+                android:src="@drawable/send2"
+                android:layout_width="41.5dp"
+                android:layout_height="29.0dp"
+                android:id="@+id/imageView1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:text="Trimite intrebarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:textSize="23dp"
+                android:layout_marginLeft="9.0dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

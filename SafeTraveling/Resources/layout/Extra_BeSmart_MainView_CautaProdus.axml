@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E4FA"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <SearchView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:id="@+id/searchView1"
+        android:queryHint="Introduceti produsul dorit"
+        android:layout_marginTop="10dp" />
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="304.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:text="sau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchView1"
+        android:id="@+id/textView2"
+        android:layout_centerInParent="true" />
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="40.5dp"
+        android:layout_below="@id/textView2"
+        android:id="@+id/relativeLayout4"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:src="@drawable/search"
+            android:layout_width="24.0dp"
+            android:layout_height="21.0dp"
+            android:id="@+id/imageView1"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:text="Utilizati cautarea avansata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView1"
+            android:id="@+id/textView3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:textSize="17dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50.5dp"
+        android:id="@+id/relativeLayout1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10.0dp"
+        android:layout_below="@id/relativeLayout4">
+        <Button
+            android:text="50"
+            android:layout_width="52.0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchView1"
+            android:id="@+id/button1"
+            android:textSize="15dp" />
+        <TextView
+            android:text="(m) Raza cautarii"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/button1"
+            android:id="@+id/textView1"
+            android:layout_below="@id/searchView1"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textSize="25dp"
+            android:layout_marginLeft="5.5dp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61ffffff"
+    android:id="@+id/relativeLayout3">
+    <Button
+        android:text="Gata"
+        android:layout_width="match_parent"
+        android:layout_height="66.5dp"
+        android:id="@+id/button1"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/background_marginiovalenegru2"
+        android:textSize="40dp" />
+    <RelativeLayout
+        android:layout_width="260.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout3"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:text="Parola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textSize="40dp" />
+        <EditText
+            android:layout_width="241.5dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:id="@+id/editText2"
+            android:layout_marginLeft="15dp"
+            android:password="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout3"
+        android:id="@+id/relativeLayout2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout1">
+            <TextView
+                android:text="Introduceti codul:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textSize="40dp" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView1"
+                android:scaleType="matrix"
+                android:layout_toRightOf="@id/textView1"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <EditText
+            android:layout_width="241.5dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayout1"
+            android:id="@+id/editText1"
+            android:layout_marginLeft="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/relativeLayout3"
+        android:id="@+id/relativeLayout4"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp">
+        <TextView
+            android:text="Confirmati Parola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textSize="35dp" />
+        <EditText
+            android:layout_width="241.5dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:id="@+id/editText3"
+            android:layout_marginLeft="15dp"
+            android:password="true" />
+    </RelativeLayout>
+</RelativeLayout>

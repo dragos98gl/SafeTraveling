@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1">
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="48.5dp"
+        p1:id="@+id/linearLayout1"
+        p1:weightSum="2"
+        p1:layout_alignParentBottom="true">
+        <Button
+            p1:text="Confirm"
+            p1:layout_height="match_parent"
+            p1:layout_weight="1"
+            p1:id="@+id/button1"
+            p1:layout_width="1dp" />
+        <Button
+            p1:text="Cancel"
+            p1:layout_height="match_parent"
+            p1:layout_weight="1"
+            p1:id="@+id/button2"
+            p1:layout_width="1dp" />
+    </LinearLayout>
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/imageView1"
+        p1:layout_above="@id/linearLayout1" />
+</RelativeLayout>

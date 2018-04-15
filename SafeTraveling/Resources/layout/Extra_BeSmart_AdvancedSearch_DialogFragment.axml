@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1">
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="334.0dp"
+        p1:layout_height="438.0dp"
+        p1:id="@+id/relativeLayout2"
+        p1:layout_centerInParent="true"
+        p1:background="@drawable/background_marginiovalealb2">
+        <RelativeLayout
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/relativeLayout3"
+            p1:layout_marginTop="20dp"
+            p1:layout_marginLeft="10dp"
+            p1:layout_marginRight="10dp"
+            p1:layout_marginBottom="10dp">
+            <TextView
+                p1:text="Categorie primara"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView1"
+                p1:textSize="25dp" />
+            <Spinner
+                p1:layout_width="115dp"
+                p1:layout_height="30dp"
+                p1:layout_below="@id/textView1"
+                p1:id="@+id/spinner1"
+                p1:layout_marginLeft="30dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:layout_below="@id/relativeLayout3"
+            p1:id="@+id/relativeLayout4"
+            p1:layout_marginLeft="10dp"
+            p1:layout_marginRight="10dp"
+            p1:layout_marginTop="10dp"
+            p1:layout_marginBottom="10dp">
+            <TextView
+                p1:text="Categorie secundara"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView2"
+                p1:textSize="25dp" />
+            <Spinner
+                p1:layout_width="115dp"
+                p1:layout_height="32.0dp"
+                p1:layout_below="@id/textView2"
+                p1:id="@+id/spinner2"
+                p1:layout_marginLeft="30dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:layout_below="@id/relativeLayout4"
+            p1:id="@+id/relativeLayout5"
+            p1:layout_marginLeft="10dp"
+            p1:layout_marginRight="10dp"
+            p1:layout_marginBottom="10dp"
+            p1:layout_marginTop="10dp">
+            <TextView
+                p1:text="Firma"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView3"
+                p1:textSize="25dp" />
+            <Spinner
+                p1:layout_width="115dp"
+                p1:layout_height="27.0dp"
+                p1:layout_below="@id/textView3"
+                p1:id="@+id/spinner3"
+                p1:layout_marginLeft="30dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="73.0dp"
+            p1:layout_below="@id/relativeLayout5"
+            p1:id="@+id/relativeLayout6"
+            p1:layout_marginTop="20.0dp"
+            p1:layout_marginRight="10dp"
+            p1:layout_marginBottom="10dp"
+            p1:layout_marginLeft="10dp"
+            p1:layout_marginEnd="10dp">
+            <TextView
+                p1:text="Nume produs"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView4"
+                p1:textSize="25dp" />
+            <AutoCompleteTextView
+                p1:layout_width="210.5dp"
+                p1:layout_height="wrap_content"
+                p1:layout_below="@id/textView4"
+                p1:id="@+id/autoCompleteTextView1"
+                p1:layout_marginLeft="30dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            p1:layout_width="wrap_content"
+            p1:layout_height="48.0dp"
+            p1:id="@+id/relativeLayout7"
+            p1:layout_alignParentBottom="true"
+            p1:layout_margin="10dp"
+            p1:layout_centerHorizontal="true">
+            <ImageView
+                p1:src="@drawable/search"
+                p1:layout_width="25dp"
+                p1:layout_height="25dp"
+                p1:id="@+id/imageView1"
+                p1:layout_centerVertical="true" />
+            <TextView
+                p1:text="Cauta"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:layout_toRightOf="@id/imageView1"
+                p1:id="@+id/textView5"
+                p1:layout_centerVertical="true"
+                p1:layout_marginLeft="15.0dp"
+                p1:textSize="35dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

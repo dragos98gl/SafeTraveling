@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/relativeLayout4">
+        <ImageView
+            android:src="@drawable/settingsicon"
+            android:layout_width="45.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView2"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:text="Modifica informatii cont"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/imageView2"
+            android:id="@+id/textView2"
+            android:gravity="center_vertical"
+            android:textSize="23dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

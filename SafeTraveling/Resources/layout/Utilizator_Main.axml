@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout1">
+            <RelativeLayout
+                android:layout_width="540.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout3"
+                android:layout_marginTop="75dp"
+                android:background="@drawable/background_MarginiOvaleNegru"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:text="Introduceti codul excursiei:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:textSize="50dp"
+                    android:layout_marginLeft="24.0dp" />
+                <Button
+                    android:text="Mai departe"
+                    android:layout_width="159.0dp"
+                    android:layout_height="72.5dp"
+                    android:id="@+id/button1"
+                    android:background="@drawable/background_MarginiOvaleNegru"
+                    android:layout_below="@id/textView2"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/editText1"
+                    android:layout_marginBottom="8.0dp"
+                    android:layout_marginRight="8.0dp" />
+                <EditText
+                    android:layout_width="262.5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView2"
+                    android:id="@+id/editText1"
+                    android:text="0a2b3c4d5e"
+                    android:layout_marginLeft="80dp"
+                    android:textSize="30dp"
+                    android:layout_marginTop="17.5dp"
+                    android:maxLength="10" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:id="@+id/left_drawer_conteiner"
+            android:layout_gravity="left"
+            android:background="#96282b30">
+            <RelativeLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="169.0dp"
+                android:id="@+id/relativeLayout2"
+                android:background="#26000000">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageView1"
+                    android:requiresFadingEdge="none"
+                    android:scaleType="fitXY"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp" />
+                <TextView
+                    android:text="Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView1"
+                    android:id="@+id/textView1"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="25dp"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+            <ListView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/relativeLayout2"
+                android:id="@+id/left_drawer_listview" />
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

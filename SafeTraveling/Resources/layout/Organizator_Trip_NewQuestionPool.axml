@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:animateLayoutChanges="true"
+    p1:id="@+id/relativeLayout1"
+    p1:background="@drawable/questionpoolbackground">
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="86dp"
+        p1:id="@+id/relativeLayout2"
+        p1:background="@drawable/background_marginiovalealbastru2"
+        p1:layout_marginTop="20dp"
+        p1:layout_marginRight="20dp"
+        p1:layout_marginLeft="20dp">
+        <TextView
+            p1:text="Introduceti intrebarea"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView1"
+            p1:layout_centerHorizontal="false"
+            p1:layout_centerVertical="true"
+            p1:textSize="40dp"
+            p1:layout_marginLeft="10dp" />
+        <ImageView xmlns:tools="http://schemas.android.com/tools"
+            p1:layout_width="40dp"
+            p1:layout_height="40dp"
+            p1:id="@+id/imageView1"
+            p1:layout_alignParentRight="true"
+            p1:layout_centerVertical="true"
+            p1:layout_marginRight="10dp"
+            p1:visibility="invisible"
+            p1:src="@drawable/cancel2" />
+    </RelativeLayout>
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="86dp"
+        p1:layout_below="@id/relativeLayout2"
+        p1:id="@+id/relativeLayout3"
+        p1:background="@drawable/background_marginiovalealbastru2"
+        p1:layout_marginLeft="20dp"
+        p1:layout_marginRight="20dp"
+        p1:layout_marginTop="20dp">
+        <TextView
+            p1:text="Setati variantele de raspuns"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView2"
+            p1:layout_centerHorizontal="false"
+            p1:layout_centerVertical="true"
+            p1:textSize="40dp"
+            p1:layout_marginLeft="10dp" />
+        <ImageView xmlns:tools="http://schemas.android.com/tools"
+            p1:layout_width="40dp"
+            p1:layout_height="40dp"
+            p1:id="@+id/imageView2"
+            p1:layout_alignParentRight="true"
+            p1:src="@drawable/cancel2"
+            p1:layout_centerVertical="true"
+            p1:layout_marginRight="10dp"
+            p1:visibility="invisible" />
+    </RelativeLayout>
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:background="@drawable/background_marginiovalealbastru2"
+        p1:layout_height="86dp"
+        p1:layout_below="@id/relativeLayout3"
+        p1:id="@+id/relativeLayout4"
+        p1:layout_marginLeft="20dp"
+        p1:layout_marginRight="20dp"
+        p1:layout_marginTop="20dp">
+        <TextView
+            p1:text="Setati durata"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView3"
+            p1:layout_centerHorizontal="false"
+            p1:layout_centerVertical="true"
+            p1:textSize="40dp"
+            p1:layout_marginLeft="10dp" />
+        <ImageView xmlns:tools="http://schemas.android.com/tools"
+            p1:src="@drawable/cancel2"
+            p1:layout_width="40dp"
+            p1:layout_height="40dp"
+            p1:id="@+id/imageView3"
+            p1:layout_alignParentRight="true"
+            p1:layout_centerVertical="true"
+            p1:layout_marginRight="10dp"
+            p1:visibility="invisible" />
+    </RelativeLayout>
+    <FrameLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="39.0dp"
+        p1:id="@+id/frameLayout1"
+        p1:background="#ccebff"
+        p1:layout_marginLeft="20dp"
+        p1:layout_marginRight="20dp"
+        p1:layout_marginBottom="20dp"
+        p1:visibility="invisible"
+        p1:animateLayoutChanges="true" />
+</RelativeLayout>

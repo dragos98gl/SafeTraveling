@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01020202">
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:id="@+id/listView1"
+        android:layout_above="@id/editText1"
+        android:background="#01000000" />
+    <Button
+        android:layout_width="49.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:layout_below="@id/listView1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/sendmessage" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45.5dp"
+        android:id="@+id/editText1"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/button1"
+        android:hint="Trimite un mesaj..." />
+</RelativeLayout>

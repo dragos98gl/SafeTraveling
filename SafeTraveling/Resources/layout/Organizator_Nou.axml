@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1"
+    p1:background="#ffadabab">
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="51.5dp"
+        p1:id="@+id/relativeLayout2"
+        p1:layout_alignParentTop="true"
+        p1:background="#96000000">
+        <TextView
+            p1:text="Finalizare cont de organizator"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView1"
+            p1:layout_marginLeft="40dp"
+            p1:gravity="center_vertical"
+            p1:textSize="30dp"
+            p1:textColor="#ffaeaeae" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        p1:layout_width="match_parent"
+        p1:id="@+id/viewPager1"
+        p1:layout_height="wrap_content"
+        p1:layout_alignParentBottom="true"
+        p1:layout_below="@id/relativeLayout2" />
+</RelativeLayout>

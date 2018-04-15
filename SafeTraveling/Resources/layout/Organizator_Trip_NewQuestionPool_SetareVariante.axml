@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ff6666"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout1"
+        android:layout_margin="30dp">
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="236.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/listView1" />
+        <RelativeLayout
+            android:layout_width="278.0dp"
+            android:layout_height="43.0dp"
+            android:layout_toRightOf="@id/listView1"
+            android:id="@+id/relativeLayout2"
+            android:layout_marginLeft="25dp">
+            <ImageView
+                android:src="@drawable/plus"
+                android:layout_width="32.0dp"
+                android:layout_height="17.0dp"
+                android:id="@+id/imageView1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="false" />
+            <TextView
+                android:text="Adaugati varianta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textSize="27dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imageView1" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

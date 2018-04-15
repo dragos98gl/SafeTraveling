@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:id="@+id/relativeLayout1">
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView1"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp" />
+        <TextView
+            android:text="Nume Prenume"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/imageView1"
+            android:id="@+id/textView1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5.0dp"
+            android:textSize="23dp" />
+    </RelativeLayout>
+</LinearLayout>

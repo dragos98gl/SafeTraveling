@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1"
+    p1:background="#61ffffff">
+    <RelativeLayout
+        p1:layout_width="248.0dp"
+        p1:layout_height="97.0dp"
+        p1:id="@+id/relativeLayout2"
+        p1:layout_marginLeft="30dp"
+        p1:layout_marginTop="20dp">
+        <TextView
+            p1:text="Nume"
+            p1:layout_width="225.5dp"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView1"
+            p1:textSize="40dp"
+            p1:textColor="#ff000000" />
+        <EditText
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:layout_below="@id/textView1"
+            p1:id="@+id/editText1"
+            p1:layout_marginLeft="15dp" />
+    </RelativeLayout>
+    <Button
+        p1:text="Finalizare"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/relativeLayout2"
+        p1:id="@+id/button1" />
+</RelativeLayout>

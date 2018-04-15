@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Invita la un joc" />
+    <item android:title="Mesaj privat" />
+    <item android:title="Cere pozitia" />
+    <item android:title="Suna" />
+    <item android:title="Mesaj SMS" />
+</menu>

@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AEBAF1B2-CDFE-42CB-8456-3C84DFC0F445}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SafeTraveling</RootNamespace>
+    <AssemblyName>SafeTraveling</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>PdbOnly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CocosSharp, Version=1.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\MonoAndroid10\CocosSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network, Version=2012.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\MonoAndroid10\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android" />
+    <Reference Include="MonoGame.Framework, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\MonoAndroid10\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK-1.0" />
+    <Reference Include="System" />
+    <Reference Include="System.Json" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.Android.Support.CustomTabs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.CustomTabs.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.CustomTabs.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.20.0.0.2\lib\MonoAndroid10\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Auth.Android">
+      <HintPath>E:\Safe Traveling\SafeTraveling\Components\xamarin.auth-1.2.3.1\lib\android\Xamarin.Auth.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Base.29.0.0.1\lib\MonoAndroid41\Xamarin.GooglePlayServices.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Basement, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.1\lib\MonoAndroid41\Xamarin.GooglePlayServices.Basement.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Maps, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Maps.29.0.0.1\lib\MonoAndroid41\Xamarin.GooglePlayServices.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Insights">
+      <HintPath>E:\Safe Traveling\SafeTraveling\packages\Xamarin.Insights.1.11.3\lib\MonoAndroid10\Xamarin.Insights.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Scripts\Games\Bounce_Game\BounceGameActivity.cs" />
+    <Compile Include="Scripts\Games\Bounce_Game\Class1.cs" />
+    <Compile Include="Scripts\Games\Bounce_Game\GameLayer.cs" />
+    <Compile Include="Scripts\Games\Game_IntentType.cs" />
+    <Compile Include="Scripts\Games\XandO\GameLayer.cs" />
+    <Compile Include="Scripts\Games\XandO\XandOActivity.cs" />
+    <Compile Include="Scripts\General Scripts\SaveUsingSharedPreferences.cs" />
+    <Compile Include="Scripts\General Scripts\TakePhoto.cs" />
+    <Compile Include="Scripts\Intro.cs" />
+    <Compile Include="Scripts\Login\Login.cs" />
+    <Compile Include="Scripts\Login\Login_SignUpUsingFacebook_DialogFragment.cs" />
+    <Compile Include="Scripts\Login\Login_SignUpUsingFacebook_Fragments\Login_SignUpUsingFacebook_NumarTelefon.cs" />
+    <Compile Include="Scripts\Login\Login_SignUpUsingFacebook_Fragments\Login_SignUpUsingFacebook_Parola.cs" />
+    <Compile Include="Scripts\Login\Login_SignUpUsingFacebook_Fragments\Login_SignUpUsingFacebook_TipCont.cs" />
+    <Compile Include="Scripts\Login\SignUp.cs" />
+    <Compile Include="Scripts\Login\ViewPagerAdapter.cs" />
+    <Compile Include="Scripts\Organizator\Main\Organizator_CreareExcursie.cs" />
+    <Compile Include="Scripts\Organizator\Main\Organizator_CreareExcursie_ViewPagerAdapter.cs" />
+    <Compile Include="Scripts\Organizator\Main\Organizator_Main.cs" />
+    <Compile Include="Scripts\Organizator\Main\Organizator_Main_LeftDrawerAdapter.cs" />
+    <Compile Include="Scripts\Organizator\Organizator Nou\Organizator_Nou.cs" />
+    <Compile Include="Scripts\Organizator\Organizator Nou\Organizator_Nou_ViewPagerAdapter.cs" />
+    <Compile Include="Scripts\Organizator\Trip\Organizator_Trip.cs" />
+    <Compile Include="Scripts\Organizator\Trip\Organizator_Trip_GridViewAdapter.cs" />
+    <Compile Include="Scripts\Organizator\Trip\Organizator_Trip_LeftDrawer.cs" />
+    <Compile Include="Scripts\Organizator\Trip\Organizator_Trip_VizualizareExcursionisti.cs" />
+    <Compile Include="Scripts\Organizator\Trip\Organizator_Trip_VizualizareExcursionisti_GoogleMapsFragment.cs" />
+    <Compile Include="Scripts\Organizator\Trip\Organizator_Trip_VizualizatreExcursionisti_Adapter.cs" />
+    <Compile Include="Scripts\Organizator\Trip\QuestionPool\NewQuestionPool\Organizator_Trip_NewQuestionPool.cs" />
+    <Compile Include="Scripts\Organizator\Trip\QuestionPool\NewQuestionPool\Organizator_Trip_NewQuestionPool_IntroducereIntrebare.cs" />
+    <Compile Include="Scripts\Organizator\Trip\QuestionPool\NewQuestionPool\Organizator_Trip_NewQuestionPool_SetareDurata.cs" />
+    <Compile Include="Scripts\Organizator\Trip\QuestionPool\NewQuestionPool\Organizator_Trip_NewQuestionPool_SetareVariante.cs" />
+    <Compile Include="Scripts\Organizator\Trip\QuestionPool\NewQuestionPool\Organizator_Trip_NewQuestionPool_SetareVariante_VarianteAdapter.cs" />
+    <Compile Include="Scripts\Organizator\Trip\QuestionPool\ViewQuestionPool\Organizator_Trip_ViewQuestionPool_Adapters.cs" />
+    <Compile Include="Scripts\Organizator\Trip\QuestionPool\ViewQuestionPool\Organizator_Trip_ViewQuestionPool_DialogFragment.cs" />
+    <Compile Include="Scripts\Server Communication\Client.cs" />
+    <Compile Include="Scripts\Server Communication\CryptDecryptData.cs" />
+    <Compile Include="Scripts\Server Communication\DataExchange.cs" />
+    <Compile Include="Scripts\Server Communication\Details.cs" />
+    <Compile Include="Scripts\StartUpService\LocationListener.cs" />
+    <Compile Include="Scripts\StartUpService\NotificationService.cs" />
+    <Compile Include="Scripts\StartUpService\OnPhoneStartUp.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Game Invite\Utilizator_Trip_InviteToGame.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Game Invite\Utilizator_Trip_InviteToGame_GridViewAdapter.cs" />
+    <Compile Include="Scripts\Utilizator\Main\Utilizator_Main.cs" />
+    <Compile Include="Scripts\Utilizator\Main\Utilizator_Main_LeftDrawerAdapter.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Be Smart\BeSmart_AdvancedSearch_DialogFragment.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Be Smart\BeSmart_Loading.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Be Smart\BeSmart_Main.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Be Smart\BeSmart_SetareDistanta_Adapter.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Be Smart\BeSmart_SetareDistanta_DialogFragment.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Be Smart\BeSmart_ViewResoult.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Be Smart\BeSmart_ViewResoult_Adapter.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Be Smart\Fragments\BeSmart_Main_CautaMagazinFragment.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Be Smart\Fragments\BeSmart_Main_CautaProdusFragment.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Galerie\Utilizator_Trip_Galerie.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Galerie\Utilizator_Trip_Galerie_GridViewAdapter.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\MasksActivities.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\ModifyAccount\Utilizator_Trip_ModifyAccount.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\ModifyAccount\Utilizator_Trip_ModifyAccount_ConfirmPhoto.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\TripData.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Utilizator_Trip.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Utilizator_Trip_ChatViewAdapter.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Utilizator_Trip_LeftDrawerAdapter.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Utilizator_Trip_RightDrawerAdapter.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Utilizator_Trip_TripInfo.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\Utilizator_Trip_ViewPagerAdapter.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\VoteQuestionPool\Utilizator_Trip_VoteQuestionPool.cs" />
+    <Compile Include="Scripts\Utilizator\Trip\VoteQuestionPool\Utilizator_Trip_VoteQuestionPool_VarianteAdapter.cs" />
+    <Compile Include="Scripts\VerificareCompatibilitate.cs" />
+    <Compile Include="Scripts\Visual Scripts\DisplayChapta.cs" />
+    <Compile Include="Scripts\Visual Scripts\DrawableConverter.cs" />
+    <Compile Include="Scripts\Visual Scripts\Notification.cs" />
+    <Compile Include="Scripts\Visual Scripts\RoundedImageView.cs" />
+    <Compile Include="Scripts\Visual Scripts\SetTypeface.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Font\Font_Bold.otf" />
+    <AndroidAsset Include="Assets\Font\Font_Normal.otf" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\Thumbs.db" />
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\a.axml" />
+    <AndroidResource Include="Resources\layout\Common_LeftDrawer.axml" />
+    <AndroidResource Include="Resources\layout\Extra_BeSmart_ActionBar.axml" />
+    <AndroidResource Include="Resources\layout\Extra_BeSmart_AdvancedSearch_DialogFragment.axml" />
+    <AndroidResource Include="Resources\layout\Extra_BeSmart_LoadingScreen.axml" />
+    <AndroidResource Include="Resources\layout\Extra_BeSmart_MainView.axml" />
+    <AndroidResource Include="Resources\layout\Extra_BeSmart_MainView_CautaMagazin.axml" />
+    <AndroidResource Include="Resources\layout\Extra_BeSmart_MainView_CautaProdus.axml" />
+    <AndroidResource Include="Resources\layout\Extra_BeSmart_SetareDistanta_Adapter.axml" />
+    <AndroidResource Include="Resources\layout\Extra_BeSmart_SetareDistanta_DialogFragment.axml" />
+    <AndroidResource Include="Resources\layout\Extra_BeSmart_ViewResoult.axml" />
+    <AndroidResource Include="Resources\layout\Extra_BeSmart_ViewResoult_Adapter.axml" />
+    <AndroidResource Include="Resources\layout\Game_BounceGame.axml" />
+    <AndroidResource Include="Resources\layout\Game_WaitForAccept.axml" />
+    <AndroidResource Include="Resources\layout\Game_XandO.axml" />
+    <AndroidResource Include="Resources\layout\Intro.axml" />
+    <AndroidResource Include="Resources\layout\Login.axml" />
+    <AndroidResource Include="Resources\layout\Login_SignUpUsingFacebook_DialogAdapter.axml" />
+    <AndroidResource Include="Resources\layout\Login_SignUpUsingFacebook_NumarTelefon.axml" />
+    <AndroidResource Include="Resources\layout\Login_SignUpUsingFacebook_Parola.axml" />
+    <AndroidResource Include="Resources\layout\Login_SignUpUsingFacebook_TipCont.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_ChangeDistance_AlertDialogAdapter.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_CreareExcursie.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_CreareExcursie_Page1.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_CreareExcursie_Page2.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_CreareExcursie_Page3.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_CreareExcursie_Page4.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Main.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Nou.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Nou_Page1.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip_GridViewAdapter.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip_NewQuestionPool.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip_NewQuestionPool_IntroducereIntrebare.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip_NewQuestionPool_SetareDurata.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip_NewQuestionPool_SetareVariante.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip_NewQuestionPool_SetareVariante_AlertDialogAdapter.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip_NewQuestionPool_SetareVariante_VariantaAdapter.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip_TripId_AlertDialogAdapter.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip_ViewQuestionPool_DialogAdapter.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip_ViewQuestionPool_ListaIntrebare_Adapter.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip_ViewQuestionPool_ListaVariante_Adapter.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip_VizualizareExcursionisti.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip_VizualizareExcursionisti_Adapter.axml" />
+    <AndroidResource Include="Resources\layout\Organizator_Trip_VizualizareExcursionisti_GoogleMapsFragment.axml" />
+    <AndroidResource Include="Resources\layout\SignUp.axml" />
+    <AndroidResource Include="Resources\layout\SignUp_Page1.axml" />
+    <AndroidResource Include="Resources\layout\SIgnUp_Page2.axml" />
+    <AndroidResource Include="Resources\layout\SignUp_Page3.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Main.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_ChatView.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_ChatViewMessagesAdapter.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_Galerie.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_Galerie_Adapter.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_GameInvite.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_GameInvite_Adapter.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_MaskB.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_MaskC.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_ModifyAccount.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_ModifyAccount_Adapter.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_ModifyAccount_ConfirmPhoto.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_RightDrawerAdapter.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_TripInfo.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_TripInfo_Adapter.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_TripInfo_AlertDialogAdapter.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_VoteQuestionPool.axml" />
+    <AndroidResource Include="Resources\layout\Utilizator_Trip_VoteQuestionPool_VarianteAdapter.axml" />
+    <AndroidResource Include="Resources\layout\VerificareCompatibilitate.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Content\Fonts\" />
+    <Folder Include="Assets\Content\Images\Ld\" />
+    <Folder Include="Assets\Content\Sounds\" />
+    <Folder Include="Resources\mipmap-hdpi\" />
+    <Folder Include="Resources\mipmap-mdpi\" />
+    <Folder Include="Resources\mipmap-xhdpi\" />
+    <Folder Include="Resources\mipmap-xxhdpi\" />
+    <Folder Include="Resources\mipmap-xxxhdpi\" />
+    <Folder Include="Scripts\Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i69.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i79.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i82.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i84.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i85.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i86.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i89.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\gif\i90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LB\img1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LB\img2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LB\img3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LB\img4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LB\img5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LoadingBackgrounds\img1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LoadingBackgrounds\img2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LoadingBackgrounds\img3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LoadingBackgrounds\img4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LoadingBackgrounds\img5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LoadingBackgrounds\img6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LoadingBackgrounds\img7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\LoadingBackgrounds\img8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\SafeTravelingIntro.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\Images\Hd\Ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\Images\Hd\Ball1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\Images\Hd\Board.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\Images\Hd\Board1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\Images\Hd\O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\Images\Hd\O_Win.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\Images\Hd\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\Images\Hd\X_O_Table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\Images\Hd\X_Win.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\ScaleIn.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\ScaleInAnim.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\ScaleOut.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\ScaleOutAnim.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\ScaleToMax.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\ScaleToZero.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\SlideRightToLeft_Speed1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\SlideRightToLeft_Speed2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\SlideRightToLeft_Speed3.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\TranslateForward.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\TranslationNext.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\AcceptGame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Apel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_MarginiOvaleAlb.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_MarginiOvaleAlb2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_MarginiOvaleAlbastru.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_MarginiOvaleAlbastru2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_MarginiOvaleFBAlbastru.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_MarginiOvaleNegru.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_MarginiOvaleNegru2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_MarginiOvaleVerde.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_Message_Me.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\background_Message_User.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BounceGame_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Button_Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Cancel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Distance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\EditInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\EditInfo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Galerie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\GaleryBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\GameInviteBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\IesireExcursie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LeftArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Login_Password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Login_Username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LoginWithFacebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ModificareCont.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\NotificationIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Original.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\QuestionPool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\QuestionPoolBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\RightArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Send2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\SendMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\SettingsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Shop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\TakePhoto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\TripInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ViewAllUsers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\VizualizareExcursionisti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\VizualizareExcursionisti_Back.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Vote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\X_O_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\OptiuniGalerie.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\OptiuniQuestionPool.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\UtilizatoriMenu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+		Other similar extension points exist, see Microsoft.Common.targets.
+		<Target Name="BeforeBuild">
+		</Target>
+		<Target Name="AfterBuild">
+		</Target>
+	-->
+</Project>

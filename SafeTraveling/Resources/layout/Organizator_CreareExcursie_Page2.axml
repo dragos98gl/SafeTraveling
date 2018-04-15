@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:text="Perioada excursiei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textSize="40dp"
+            android:textColor="#ff000000" />
+        <RelativeLayout
+            android:layout_width="246.0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:id="@+id/relativeLayout3"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="Plecare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textSize="30dp"
+                android:textColor="#ff000000"
+                android:layout_marginLeft="15dp"
+                android:textStyle="italic" />
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView2"
+                android:id="@+id/datePicker1"
+                android:calendarViewShown="false" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="246.0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/relativeLayout3"
+            android:id="@+id/relativeLayout4"
+            android:layout_below="@id/textView1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="Intoarcere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textSize="30dp"
+                android:textColor="#ff000000"
+                android:textStyle="italic"
+                android:layout_marginLeft="15dp" />
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView3"
+                android:id="@+id/datePicker2"
+                android:calendarViewShown="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

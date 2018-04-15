@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1">
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="150dp"
+        p1:layout_height="150dp"
+        p1:id="@+id/relativeLayout2">
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="75dp"
+            p1:layout_height="75dp"
+            p1:id="@+id/imageView1"
+            p1:layout_centerVertical="false"
+            p1:layout_centerHorizontal="true"
+            p1:layout_marginTop="10dp" />
+        <TextView
+            p1:text="Nume:"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:layout_below="@id/imageView1"
+            p1:id="@+id/textView1"
+            p1:layout_marginLeft="5dp"
+            p1:textColor="#000000" />
+        <TextView
+            p1:text="Distanta:"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:layout_below="@id/textView1"
+            p1:id="@+id/textView2"
+            p1:layout_marginLeft="5dp"
+            p1:textColor="#000000" />
+    </RelativeLayout>
+</RelativeLayout>

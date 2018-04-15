@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96282b30">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout1"
+        android:background="#64ffffff">
+        <RelativeLayout
+            android:layout_width="558.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout2"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/background_marginiovalenegru"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:text="Generati o noua excursie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textSize="50dp"
+                android:layout_marginLeft="24.0dp" />
+            <Button
+                android:text="Incepeti!"
+                android:layout_width="230.0dp"
+                android:layout_height="57.0dp"
+                android:id="@+id/button1"
+                android:layout_below="@id/textView2"
+                android:layout_marginLeft="280dp"
+                android:textSize="30dp"
+                android:background="@drawable/background_MarginiOvaleNegru"
+                android:layout_marginBottom="11.5dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

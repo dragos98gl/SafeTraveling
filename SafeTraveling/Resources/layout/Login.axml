@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1">
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="472.5dp"
+        p1:layout_height="73.0dp"
+        p1:id="@+id/relativeLayout2"
+        p1:background="@drawable/background_MarginiOvaleNegru"
+        p1:layout_centerHorizontal="true"
+        p1:layout_marginTop="52.5dp">
+        <ImageView
+            p1:layout_width="76.5dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/imageView1"
+            p1:src="@drawable/login_username"
+            p1:paddingTop="8dp"
+            p1:paddingRight="8dp"
+            p1:paddingBottom="8dp"
+            p1:paddingLeft="8dp" />
+        <EditText
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:layout_toRightOf="@id/imageView1"
+            p1:id="@+id/editText1"
+            p1:layout_marginLeft="13dp"
+            p1:textSize="35dp"
+            p1:textStyle="italic"
+            p1:hint="Nume Account" />
+    </RelativeLayout>
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="472.5dp"
+        p1:layout_height="73.0dp"
+        p1:layout_below="@id/relativeLayout2"
+        p1:id="@+id/relativeLayout3"
+        p1:layout_centerHorizontal="true"
+        p1:layout_marginTop="9.0dp"
+        p1:background="@drawable/background_MarginiOvaleNegru">
+        <ImageView
+            p1:layout_width="76.5dp"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/imageView2"
+            p1:src="@drawable/login_password"
+            p1:paddingTop="8dp"
+            p1:paddingRight="8dp"
+            p1:paddingBottom="8dp"
+            p1:paddingLeft="8dp" />
+        <EditText
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:layout_toRightOf="@id/imageView2"
+            p1:id="@+id/editText2"
+            p1:textSize="35dp"
+            p1:layout_marginLeft="13dp"
+            p1:hint="Parola"
+            p1:password="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="472.5dp"
+        p1:layout_height="53dp"
+        p1:layout_below="@id/relativeLayout3"
+        p1:id="@+id/relativeLayout4"
+        p1:layout_centerHorizontal="true"
+        p1:layout_marginTop="29.0dp">
+        <Button
+            p1:text="Sign In"
+            p1:layout_width="226.25dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/button1"
+            p1:textSize="30dp"
+            p1:background="@drawable/background_marginiovaleverde" />
+        <Button
+            p1:text="Sign Up"
+            p1:layout_width="236.25dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/button2"
+            p1:layout_alignParentRight="true"
+            p1:textSize="30dp"
+            p1:background="@drawable/background_marginiovalealbastru" />
+    </RelativeLayout>
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="472.5dp"
+        p1:layout_height="53dp"
+        p1:layout_below="@id/relativeLayout4"
+        p1:id="@+id/relativeLayout5"
+        p1:layout_centerHorizontal="true"
+        p1:layout_marginTop="10.0dp"
+        p1:background="#01ffffff">
+        <CheckBox
+            p1:text="Remember Me"
+            p1:layout_width="140.0dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/checkBox1"
+            p1:scaleX="1.3"
+            p1:scaleY="1.3"
+            p1:textSize="15dp"
+            p1:layout_marginLeft="75.5dp"
+            p1:textColor="#96ffffff" />
+        <ImageView
+            p1:layout_width="160.0dp"
+            p1:layout_height="35.0dp"
+            p1:id="@+id/imageView3"
+            p1:layout_alignParentLeft="false"
+            p1:layout_alignParentRight="true"
+            p1:background="@drawable/loginwithfacebook"
+            p1:layout_marginRight="15dp"
+            p1:layout_marginTop="5dp" />
+    </RelativeLayout>
+</RelativeLayout>

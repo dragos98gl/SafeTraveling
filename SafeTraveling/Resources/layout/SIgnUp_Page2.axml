@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1"
+    p1:background="#61ffffff">
+    <RelativeLayout
+        p1:layout_width="375.0dp"
+        p1:layout_height="97.0dp"
+        p1:id="@+id/relativeLayout2"
+        p1:layout_marginLeft="30dp"
+        p1:layout_marginTop="20dp">
+        <TextView
+            p1:text="Adresa de e-mail"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView1"
+            p1:textSize="40dp"
+            p1:textColor="#ff000000" />
+        <EditText
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:layout_below="@id/textView1"
+            p1:id="@+id/editText1"
+            p1:layout_marginLeft="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        p1:layout_width="375.0dp"
+        p1:layout_height="101.5dp"
+        p1:layout_below="@id/relativeLayout2"
+        p1:id="@+id/relativeLayout3"
+        p1:layout_marginLeft="30dp"
+        p1:layout_marginTop="10dp">
+        <TextView
+            p1:text="Numar de telefon"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView2"
+            p1:textSize="40dp"
+            p1:textColor="#ff000000" />
+        <TextView
+            p1:text="(ulterior acesta va fi username-ul dvs.)"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:layout_below="@id/textView2"
+            p1:id="@+id/textView3"
+            p1:textColor="#ff000000" />
+        <EditText
+            p1:inputType="phone"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:layout_below="@id/textView3"
+            p1:id="@+id/editText2"
+            p1:layout_marginLeft="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/relativeLayout3"
+        p1:id="@+id/relativeLayout4"
+        p1:layout_marginLeft="30dp"
+        p1:layout_marginTop="10dp">
+        <TextView
+            p1:text="Tip account"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView4"
+            p1:textSize="40dp"
+            p1:textColor="#ff000000" />
+        <RadioGroup
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/radioGroup1"
+            p1:orientation="horizontal"
+            p1:layout_toRightOf="@id/textView4"
+            p1:layout_centerVertical="true"
+            p1:layout_marginLeft="20dp">
+            <RadioButton
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:checked="true"
+                p1:text="Utilizator"
+                p1:id="@+id/radioButton1" />
+            <RadioButton
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:text="Organizator"
+                p1:id="@+id/radioButton3"
+                p1:layout_marginLeft="20.0dp" />
+        </RadioGroup>
+    </RelativeLayout>
+</RelativeLayout>
